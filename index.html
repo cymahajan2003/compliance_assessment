@@ -30,7 +30,7 @@
 
     /* Shared heading class for consistent size */
     .same-heading {
-      font-size: 31px; /* Reduced from 32px to 31px */
+      font-size: 32px;
     }
 
     /* Hero Section */
@@ -49,7 +49,7 @@
     }
 
     .hero h1 {
-      font-size: 49px; /* Reduced from 50px to 49px */
+      font-size: 50px;
       font-weight: 700;
       margin-bottom: 20px;
     }
@@ -63,7 +63,7 @@
     }
 
     .hero p {
-      font-size: 21px; /* Reduced from 22px to 21px */
+      font-size: 22px;
       font-weight: 300;
       margin-bottom: 30px;
       opacity: 0.9;
@@ -74,7 +74,7 @@
       color: #cb4d62;
       border: none;
       padding: 12px 28px;
-      font-size: 15px; /* Reduced from 16px to 15px */
+      font-size: 16px;
       font-weight: 500;
       border-radius: 25px;
       cursor: pointer;
@@ -105,7 +105,7 @@
     }
 
     .about-text p {
-      font-size: 15px; /* Reduced from 16px to 15px */
+      font-size: 16px;
       font-weight: 300;
       text-align: justify;
       line-height: 1.7;
@@ -125,8 +125,8 @@
       border: 4px solid #eee;
     }
 
-    /* DigiDefense Section (formerly CampusGuard Section) */
-    .digidefense-section {
+    /* CampusGuard Section */
+    .campusguard-section {
       padding: 80px 10%;
       background-color: #f9f9f9;
     }
@@ -136,7 +136,7 @@
     }
 
     .section-subtext {
-      font-size: 15px; /* Reduced from 16px to 15px */
+      font-size: 16px;
       color: #333;
       max-width: 1000px;
       margin-bottom: 60px;
@@ -174,14 +174,14 @@
     }
 
     .card-title {
-      font-size: 17px; /* Reduced from 18px to 17px */
+      font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
       color: #222;
     }
 
     .card-text {
-      font-size: 14px; /* Reduced from 15px to 14px */
+      font-size: 15px;
       color: #444;
       font-weight: 300;
       line-height: 1.5;
@@ -206,16 +206,16 @@
       }
 
       .hero h1 {
-        font-size: 31px; /* Reduced from 32px to 31px */
+        font-size: 34px; /* Increased by 2px from 32px */
       }
 
       .hero p {
-        font-size: 15px; /* Reduced from 16px to 15px */
+        font-size: 18px; /* Increased by 2px from 16px */
       }
 
       .hero button {
         padding: 10px 24px;
-        font-size: 13px; /* Reduced from 14px to 13px */
+        font-size: 16px; /* Increased by 2px from 14px */
       }
 
       .about {
@@ -242,11 +242,11 @@
 
       /* Match font sizes with About section */
       .section-subtext {
-        font-size: 15px; /* Already set, ensuring clarity */
+        font-size: 16px;
       }
 
       .card-text {
-        font-size: 15px; /* Reduced from 16px to 15px to match .about-text p */
+        font-size: 16px; /* Match .about-text p */
       }
 
       /* Ensure cards are 100% width */
@@ -256,16 +256,16 @@
 
       /* Adjust card padding to match effective side spacing */
       .card {
-        padding: 30px 15px; /* Reduced side padding to align with 15px total side spacing */
+        padding: 30px 15px; /* Reduce side padding to align with 15px total side spacing */
       }
 
-      /* Make the DigiDefense Section full-width (edge-to-edge) like About section */
-      .digidefense-section {
+      /* Make the Cards Section full-width (edge-to-edge) like About section */
+      .campusguard-section {
         padding: 40px 0; /* Full-width: remove left/right padding */
       }
 
-      /* Add padding to content inside DigiDefense Section for readability */
-      .digidefense-section > * {
+      /* Add padding to content inside Cards Section for readability */
+      .campusguard-section > * {
         padding: 0 15px;
         box-sizing: border-box;
       }
@@ -273,19 +273,19 @@
 
     @media (max-width: 480px) {
       .hero h1 {
-        font-size: 27px; /* Reduced from 28px to 27px */
+        font-size: 30px; /* Increased by 2px from 28px */
       }
 
       .hero p {
-        font-size: 13px; /* Reduced from 14px to 13px */
+        font-size: 16px; /* Increased by 2px from 14px */
       }
 
       .hero button {
-        font-size: 12px; /* Reduced from 13px to 12px */
+        font-size: 15px; /* Increased by 2px from 13px */
       }
 
       .about-text p {
-        font-size: 12px; /* Reduced from 13px to 12px */
+        font-size: 13px;
       }
 
       .about-img img {
@@ -294,20 +294,20 @@
       }
 
       .same-heading {
-        font-size: 23px; /* Reduced from 24px to 23px */
+        font-size: 24px;
       }
 
       /* Match font sizes at 480px */
       .section-subtext {
-        font-size: 12px; /* Reduced from 13px to 12px to match .about-text p */
+        font-size: 13px; /* Match .about-text p */
       }
 
       .card-text {
-        font-size: 12px; /* Reduced from 13px to 12px to match .about-text p */
+        font-size: 13px; /* Match .about-text p */
       }
 
       .card-title {
-        font-size: 15px; /* Reduced from 16px to 15px */
+        font-size: 16px; /* Slightly larger for hierarchy, scaled down */
       }
     }
   </style>
@@ -333,7 +333,7 @@
         DigiDefense is widely viewed as the expert in providing assessment services, guidance, and ongoing
         support to help organizations meet many of their compliance requirements. From pre-assessment planning,
         gap analysis, expert recommendations to address identified risks, and formulating a defined project
-        plan, DigiDefense supports you through the entire compliance process.
+        plan, CampusGuard supports you through the entire compliance process.
       </p>
     </div>
     <div class="about-img">
@@ -341,9 +341,9 @@
     </div>
   </div>
 
-  <!-- DigiDefense Section (formerly CampusGuard Section) -->
-  <section class="digidefense-section">
-    <h2 class="section-title red-heading same-heading">Why Choose DigiDefense for Your Compliance Assessments?</h2>
+  <!-- Cards Section -->
+  <section class="campusguard-section">
+    <h2 class="section-title red-heading same-heading">Why Choose CampusGuard for Your Compliance Assessments?</h2>
     <p class="section-subtext">
       Compliance requirements are challenging for many organizations—from their confusing terms to their frequent
       updates.
