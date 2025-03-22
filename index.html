@@ -55,10 +55,10 @@
     }
 
     .hero hr {
-      width: 50px;
+      width: 120px;
       height: 3px;
       background-color: #a5cbd3;
-      border: none;
+      border-radius: 50px;
       margin: 16px 0;
     }
 
@@ -229,9 +229,23 @@
         width: 100%;
       }
 
+      .about-img {
+        order: -1;
+      }
+
       .about-img img {
         max-width: 100%;
         border-radius: 0 0 40% 40%;
+      }
+
+      /* Ensure cards are 100% width */
+      .card {
+        width: 100%;
+      }
+
+      /* Make the Cards Section full-width (edge-to-edge) */
+      .campusguard-section {
+        padding: 40px 0; /* Remove left/right padding, keep top/bottom */
       }
     }
 
@@ -324,8 +338,7 @@
       </div>
 
       <div class="card">
-        <img src="https://img.icons8.com/ios-filled/50/000000/play-button-circled.png" alt="icon"
-          class="card-icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/play-button-circled.png" alt="icon" class="card-icon">
         <h3 class="card-title">Online Training Instruction</h3>
         <p class="card-text">
           Our experts also provide access to online learning resources that support your organization’s staff
