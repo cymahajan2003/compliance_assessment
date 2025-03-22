@@ -113,50 +113,99 @@
             border: 4px solid #eee;
         }
 
-        /* Responsive Design */
+        /* Responsive Design for Mobile View */
         @media (max-width: 768px) {
+
+            /* Hero Section */
             .hero {
                 align-items: flex-start;
+                text-align: left;
                 padding: 40px 15px;
+            }
+
+            .hero-content {
+                max-width: 100%;
             }
 
             .hero h1 {
                 font-size: 32px;
+                margin-bottom: 8px;
+                text-align: left;
+            }
+
+            .hero hr {
+                width: 50px;
+                margin: 12px 0;
             }
 
             .hero p {
                 font-size: 16px;
+                margin-bottom: 20px;
+                text-align: left;
             }
 
+            .hero button {
+                padding: 10px 24px;
+                font-size: 14px;
+            }
+
+            /* About Section */
             .about {
                 flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
                 padding: 40px 15px;
+                gap: 20px;
             }
 
             .about-text {
-                order: 2;
                 min-width: 100%;
+                order: 2;
+                /* Move text below the image in mobile view */
+            }
+
+            .about-text h2 {
+                font-size: 22px;
+                margin-bottom: 15px;
+                text-align: left;
+            }
+
+            .about-text p {
+                font-size: 14px;
+                text-align: justify;
+                line-height: 1.6;
             }
 
             .about-img {
-                order: 1;
                 width: 100%;
+                display: flex;
                 justify-content: center;
+                /* Center horizontally */
+                order: 1;
+                /* Image appears before text */
+                margin-bottom: 1rem;
             }
 
             .about-img img {
-                max-width: 400px;
+                width: 90%;
+                /* Increase size for mobile */
+                max-width: 350px;
+                /* Increased max size */
                 border-radius: 0 0 40% 40%;
+                border: 3px solid #eee;
             }
         }
 
+        /* Extra Small Screens (below 480px) */
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 28px;
+                text-align: left;
             }
 
             .hero p {
                 font-size: 14px;
+                text-align: left;
             }
 
             .hero button {
@@ -166,10 +215,12 @@
 
             .about-text h2 {
                 font-size: 20px;
+                text-align: left;
             }
 
             .about-text p {
                 font-size: 13px;
+                text-align: justify;
             }
 
             .about-img img {
@@ -210,6 +261,7 @@
         .card {
             background-color: #fff;
             border: 3px solid #cde4f4;
+            /* ✅ Light blue border added */
             border-radius: 12px;
             padding: 30px 25px;
             width: 30%;
@@ -285,7 +337,7 @@
         </div>
     </div>
 
-    <!-- Cards Section -->
+
     <section class="campusguard-section">
         <h2 class="section-title">Why Choose CampusGuard for Your Compliance Assessments?</h2>
         <p class="section-subtext">
@@ -293,29 +345,41 @@
             updates.
             Our team helps to decode the ever-evolving requirements and guide you through the compliance regulations,
             standards,
-            and frameworks to assess your current controls and recommend a path to compliance.
+            and frameworks to assess your current controls and recommend path to compliance.
         </p>
 
         <div class="cards-container">
             <div class="card">
                 <img src="https://img.icons8.com/ios-filled/50/000000/documents.png" alt="icon" class="card-icon">
-                <h3 class="card-title">Thorough Risk Assessments</h3>
-                <p class="card-text">We evaluate your current environment against compliance requirements to identify risks and provide mitigation strategies.</p>
+                <h3 class="card-title">Informed of Current Requirements</h3>
+                <p class="card-text">
+                    We stay up to date on all evolving requirements for a myriad of industry standards and regulations,
+                    ensuring that you will always be informed of current compliance requirements that impact your
+                    organization.
+                </p>
             </div>
 
             <div class="card">
-                <img src="https://img.icons8.com/ios-filled/50/000000/compliance.png" alt="icon" class="card-icon">
-                <h3 class="card-title">Expert-Led Guidance</h3>
-                <p class="card-text">Our team of certified professionals will walk you through every step of the assessment and compliance process.</p>
+                <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="icon" class="card-icon">
+                <h3 class="card-title">Customer-centric Approach</h3>
+                <p class="card-text">
+                    We understand the unique needs and challenges facing your organization and provide exceptional
+                    customer care to exceed your expectations.
+                </p>
             </div>
 
             <div class="card">
-                <img src="https://img.icons8.com/ios-filled/50/000000/strategy.png" alt="icon" class="card-icon">
-                <h3 class="card-title">Tailored Roadmaps</h3>
-                <p class="card-text">Receive a customized plan that outlines necessary steps to meet compliance tailored to your organization's needs.</p>
+                <img src="https://img.icons8.com/ios-filled/50/000000/play-button-circled.png" alt="icon"
+                    class="card-icon">
+                <h3 class="card-title">Online Training Instruction for Your Users</h3>
+                <p class="card-text">
+                    We offer Online Training to inform your employees on compliance requirements topics featuring
+                    up-to-date content to reflect current lessons learned and data breach statistics.
+                </p>
             </div>
         </div>
     </section>
+
 
 </body>
 
