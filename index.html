@@ -227,7 +227,7 @@
       .about-text,
       .about-img {
         width: 100%;
-        padding: 0 15px; /* Add padding to content for readability */
+        padding: 0 15px; /* 15px side padding for content */
         box-sizing: border-box;
       }
 
@@ -240,9 +240,23 @@
         border-radius: 0 0 40% 40%;
       }
 
+      /* Match font sizes with About section */
+      .section-subtext {
+        font-size: 16px;
+      }
+
+      .card-text {
+        font-size: 16px; /* Match .about-text p */
+      }
+
       /* Ensure cards are 100% width */
       .card {
         width: 100%;
+      }
+
+      /* Adjust card padding */
+      .card {
+        padding: 30px 15px; /* Keep consistent with previous adjustment */
       }
 
       /* Make the Cards Section full-width (edge-to-edge) like About section */
@@ -250,9 +264,9 @@
         padding: 40px 0; /* Full-width: remove left/right padding */
       }
 
-      /* Add padding to content inside Cards Section for readability */
+      /* Add padding to content inside Cards Section, 1px smaller than About */
       .campusguard-section > * {
-        padding: 0 15px;
+        padding: 0 14px; /* 14px side padding (1px smaller than About's 15px) */
         box-sizing: border-box;
       }
     }
@@ -281,6 +295,19 @@
 
       .same-heading {
         font-size: 24px;
+      }
+
+      /* Match font sizes at 480px */
+      .section-subtext {
+        font-size: 13px; /* Match .about-text p */
+      }
+
+      .card-text {
+        font-size: 13px; /* Match .about-text p */
+      }
+
+      .card-title {
+        font-size: 16px; /* Slightly larger for hierarchy, scaled down */
       }
     }
   </style>
