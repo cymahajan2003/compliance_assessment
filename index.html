@@ -220,13 +220,15 @@
 
       .about {
         flex-direction: column;
-        padding: 40px 15px;
+        padding: 40px 0; /* Full-width: remove left/right padding */
         gap: 20px;
       }
 
       .about-text,
       .about-img {
         width: 100%;
+        padding: 0 15px; /* Add padding to content for readability */
+        box-sizing: border-box;
       }
 
       .about-img {
@@ -243,9 +245,15 @@
         width: 100%;
       }
 
-      /* Make the Cards Section full-width (edge-to-edge) */
+      /* Make the Cards Section full-width (edge-to-edge) like About section */
       .campusguard-section {
-        padding: 40px 0; /* Remove left/right padding, keep top/bottom */
+        padding: 40px 0; /* Full-width: remove left/right padding */
+      }
+
+      /* Add padding to content inside Cards Section for readability */
+      .campusguard-section > * {
+        padding: 0 15px;
+        box-sizing: border-box;
       }
     }
 
