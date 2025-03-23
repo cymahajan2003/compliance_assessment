@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compliance Assessments</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* Global Styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -18,7 +22,6 @@
       color: #333;
     }
 
-    /* Reusable Classes */
     .red-heading {
       color: #a91e22;
       font-weight: 600;
@@ -26,14 +29,13 @@
 
     .same-heading {
       font-size: 32px;
-      text-align: left; /* Headings remain left-aligned */
     }
 
     /* Hero Section */
     .hero {
       background-color: #008080;
       color: white;
-      padding: 50px 10% 60px;
+      padding: 40px 10% 60px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -44,32 +46,28 @@
       max-width: 700px;
     }
 
-    .hero-h1 {
+    .hero h1 {
       font-size: 50px;
       font-weight: 700;
       margin-bottom: 20px;
-      text-align: left; /* Heading remains left-aligned */
     }
 
-    .hero-hr {
+    .hero hr {
       width: 120px;
       height: 3px;
-      background-color: #B2D8D8;
+      background-color:  #B2D8D8;
       border-radius: 50px;
       margin: 16px 0;
-      border: none;
     }
 
-    .hero-p {
+    .hero p {
       font-size: 22px;
       font-weight: 300;
       margin-bottom: 30px;
       opacity: 0.9;
-      text-align: justify; /* Justify paragraph */
-      line-height: 1.6;
     }
 
-    .hero-button {
+    .hero button {
       background-color: #ffffff;
       color: #cb4d62;
       border: none;
@@ -81,7 +79,7 @@
       transition: background-color 0.3s ease;
     }
 
-    .hero-button:hover {
+    .hero button:hover {
       background-color: #f5f5f5;
     }
 
@@ -100,15 +98,14 @@
       min-width: 300px;
     }
 
-    .about-text-h2 {
+    .about-text h2 {
       margin-bottom: 20px;
-      text-align: left; /* Heading remains left-aligned */
     }
 
-    .about-text-p {
+    .about-text p {
       font-size: 16px;
       font-weight: 300;
-      text-align: justify; /* Justify paragraph */
+      text-align: justify;
       line-height: 1.7;
       color: #444;
     }
@@ -119,30 +116,30 @@
       text-align: center;
     }
 
-    .about-img-img {
+    .about-img img {
       width: 90%;
       max-width: 400px;
-      border-radius: 0;
+      border-radius: 20px;
       border: 4px solid #eee;
     }
 
-    /* DigiDefense Section */
-    .DigiDefense-section {
+    /* CampusGuard Section */
+    .campusguard-section {
       padding: 80px 10%;
       background-color: #f9f9f9;
     }
 
     .section-title {
       margin-bottom: 20px;
-      text-align: left; /* Heading remains left-aligned */
     }
 
     .section-subtext {
       font-size: 16px;
       color: #333;
+      max-width: 1000px;
       margin-bottom: 60px;
       line-height: 1.6;
-      text-align: justify; /* Justify paragraph */
+      text-align: justify;
       font-weight: 300;
     }
 
@@ -155,25 +152,18 @@
 
     .card {
       background-color: #fff;
-      border: 3px solid #66B2B2;
+      border: 3px solid  #B2D8D8;
       border-radius: 12px;
       padding: 30px 25px;
       width: 30%;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-      text-align: left; /* Left-align card content */
-      box-sizing: border-box;
       transition: all 0.3s ease;
+      text-align: left;
     }
 
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-icon-wrapper {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
     }
 
     .card-icon {
@@ -186,7 +176,6 @@
       font-weight: 600;
       margin-bottom: 15px;
       color: #222;
-      text-align: left; /* Heading remains left-aligned */
     }
 
     .card-text {
@@ -194,27 +183,144 @@
       color: #444;
       font-weight: 300;
       line-height: 1.5;
-      text-align: justify; /* Justify paragraph */
+      text-align: justify;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .card {
+        width: 100%;
+      }
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 15px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .hero button {
+        padding: 10px 24px;
+        font-size: 16px;
+      }
+
+      .about {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 20px;
+      }
+
+      .about-text,
+      .about-img {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+
+      .about-img {
+        order: -1;
+      }
+
+      .about-img img {
+        max-width: 100%;
+        border-radius: 0 0 40% 40%;
+      }
+
+      .section-subtext {
+        font-size: 16px;
+      }
+
+      .card-text {
+        font-size: 16px;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .card {
+        padding: 30px 15px;
+      }
+
+      .campusguard-section {
+        padding: 40px 0;
+      }
+
+      .campusguard-section>* {
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero button {
+        font-size: 15px;
+      }
+
+      .about-text p {
+        font-size: 13px;
+      }
+
+      .about-img img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .same-heading {
+        font-size: 24px;
+      }
+
+      .section-subtext {
+        font-size: 13px;
+      }
+
+      .card-text {
+        font-size: 13px;
+      }
+
+      .card-title {
+        font-size: 16px;
+      }
     }
 
     /* Assessing Section */
     .assessing-section {
       background-color: #008080;
       color: #fff;
-      border: 2px solid #B2D8D8;
+      border: 2px solid  #B2D8D8;
       border-top-left-radius: 50px;
       border-bottom-left-radius: 50px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       margin: 40px 0 40px 10%;
       margin-right: 0;
-      width: calc(100% - 10%);
-    }
+      width: calc(100% - 10%)
+        }
 
     .assessing-content-wrapper {
       padding: 50px 12%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       gap: 30px;
     }
@@ -223,18 +329,16 @@
       max-width: 70%;
     }
 
-    .assessing-content-h2 {
+    .assessing-content h2 {
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 15px;
-      text-align: left; /* Heading remains left-aligned */
     }
 
-    .assessing-content-p {
+    .assessing-content p {
       font-size: 16px;
       font-weight: 300;
       line-height: 1.6;
-      text-align: justify; /* Justify paragraph */
     }
 
     .assessing-button {
@@ -262,15 +366,75 @@
       font-size: 18px;
     }
 
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .assessing-section {
+        margin: 40px 15px;
+        width: auto;
+        /* Reset width for mobile */
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .assessing-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 40px 20px;
+      }
+
+      .assessing-content {
+        max-width: 100%;
+        text-align: left;
+      }
+
+      .assessing-content h2 {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .assessing-content p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .assessing-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #a91e22;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        align-self: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .assessing-content h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+
+      .assessing-content p {
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .assessing-button {
+        padding: 8px 16px;
+        font-size: 13px;
+      }
+    }
+
     /* FAQ Section */
     .faq-section {
       padding: 80px 10%;
       background-color: #fff;
     }
 
-    .faq-section-h2 {
+    .faq-section h2 {
       margin-bottom: 40px;
-      text-align: left; /* Heading remains left-aligned */
     }
 
     .faq-container {
@@ -281,7 +445,7 @@
 
     .faq-card {
       background-color: #fff;
-      border: 3px solid #66B2B2;
+      border: 3px solid #cde4f4;
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
@@ -293,28 +457,24 @@
       box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
     }
 
-    .faq-toggle {
-      display: none;
-    }
-
     .faq-question {
       font-size: 18px;
       font-weight: 600;
       color: #222;
       cursor: pointer;
-      display: block;
-      text-align: left; /* Question remains left-aligned */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .faq-question::after {
       content: "+";
       font-size: 24px;
       color: #a91e22;
-      float: right;
       transition: transform 0.3s ease;
     }
 
-    .faq-toggle:checked + .faq-question::after {
+    .faq-card.active .faq-question::after {
       content: "-";
       transform: rotate(180deg);
     }
@@ -325,10 +485,9 @@
       line-height: 1.5;
       margin-top: 15px;
       display: none;
-      text-align: justify; /* Justify answer */
     }
 
-    .faq-toggle:checked + .faq-question + .faq-answer {
+    .faq-card.active .faq-answer {
       display: block;
     }
 
@@ -340,9 +499,9 @@
       margin-top: 15px;
     }
 
-    .compliance-button {
+    .compliance-types button {
       background-color: #fff;
-      border: 2px solid #008080;
+      border: 2px solid #073148;
       border-radius: 8px;
       padding: 10px;
       font-size: 14px;
@@ -352,136 +511,19 @@
       transition: background-color 0.3s ease;
     }
 
-    .compliance-button:hover {
+    .compliance-types button:hover {
       background-color: #f5f5f5;
     }
 
     /* Responsive Design */
-
-    /* Media Query for 992px */
-    @media (max-width: 992px) {
-      .cards-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .card {
-        width: 100%;
-      }
-    }
-
-    /* Media Query for 768px */
     @media (max-width: 768px) {
-      .same-heading {
-        font-size: 32px;
-      }
-
-      .hero {
-        padding: 40px 15px;
-      }
-
-      .hero-h1 {
-        font-size: 34px;
-      }
-
-      .hero-p {
-        font-size: 18px;
-      }
-
-      .hero-button {
-        padding: 10px 24px;
-        font-size: 16px;
-      }
-
-      .about {
-        flex-direction: column;
-        padding: 40px 0;
-        gap: 20px;
-      }
-
-      .about-text,
-      .about-img {
-        width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
-      }
-
-      .about-img {
-        order: -1;
-      }
-
-      .about-img-img {
-        max-width: 100%;
-        border-radius: 0;
-      }
-
-      .DigiDefense-section {
-        padding: 40px 0;
-      }
-
-      .section-title,
-      .section-subtext {
-        padding: 0 15px;
-      }
-
-      .section-subtext {
-        font-size: 16px;
-      }
-
-      .card {
-        padding: 30px 15px;
-        width: 100%;
-      }
-
-      .card-text {
-        font-size: 16px;
-      }
-
-      .assessing-section {
-        border-top-left-radius: 60px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 60px;
-        border-bottom-right-radius: 10px;
-        margin: 40px 15px;
-        margin-right: 15px;
-        width: auto;
-      }
-
-      .assessing-content-wrapper {
-        padding: 40px 20px;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-
-      .assessing-content {
-        max-width: 100%;
-        text-align: left;
-      }
-
-      .assessing-content-h2 {
-        font-size: 24px;
-        text-align: left;
-      }
-
-      .assessing-content-p {
-        font-size: 14px;
-        line-height: 1.8;
-      }
-
-      .assessing-button {
-        padding: 10px 20px;
-        font-size: 14px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-        align-self: flex-start;
-      }
-
       .faq-section {
         padding: 40px 0;
       }
 
-      .faq-section-h2,
-      .faq-container {
+      .faq-section>* {
         padding: 0 15px;
+        box-sizing: border-box;
       }
 
       .faq-question {
@@ -497,59 +539,7 @@
       }
     }
 
-    /* Media Query for 480px */
     @media (max-width: 480px) {
-      .same-heading {
-        font-size: 24px;
-      }
-
-      .hero-h1 {
-        font-size: 30px;
-      }
-
-      .hero-p {
-        font-size: 16px;
-      }
-
-      .hero-button {
-        font-size: 15px;
-      }
-
-      .about-text-p {
-        font-size: 13px;
-      }
-
-      .about-img-img {
-        width: 100%;
-      }
-
-      .section-subtext {
-        font-size: 13px;
-      }
-
-      .card-title {
-        font-size: 16px;
-      }
-
-      .card-text {
-        font-size: 13px;
-      }
-
-      .assessing-content-h2 {
-        font-size: 20px;
-        margin-bottom: 12px;
-      }
-
-      .assessing-content-p {
-        font-size: 13px;
-        line-height: 1.7;
-      }
-
-      .assessing-button {
-        padding: 8px 16px;
-        font-size: 13px;
-      }
-
       .faq-question {
         font-size: 14px;
       }
@@ -562,204 +552,152 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .compliance-button {
-        padding: 8px;
+      .compliance-types button {
         font-size: 12px;
+        padding: 8px;
       }
     }
   </style>
 </head>
-<body>
-  <div class="body">
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1 class="hero-h1">Compliance Assessments</h1>
-        <hr class="hero-hr" />
-        <p class="hero-p">Boost Your Compliance Success with Expert Guidance and Support</p>
-        <button class="hero-button">Contact Us</button>
-      </div>
-    </div>
 
-    <!-- About Section -->
-    <div class="about">
-      <div class="about-text">
-        <h2 class="red-heading same-heading about-text-h2">
-          The Compliance Assessment Expert
-        </h2>
-        <p class="about-text-p">
-          DigiDefense excels in compliance assessments, continuously evaluating your data, platforms, and procedures to
-          meet industry and regulatory standards. Our experts conduct pre-assessment planning, gap analysis, and provide
-          actionable recommendations to address risks, ensuring compliance with regulations like GDPR, HIPAA, and PCI DSS.
-          With a tailored project plan, DigiDefense supports you throughout the compliance process, keeping you aligned
-          with best practices.
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Compliance Assessments</h1>
+      <hr />
+      <p>Boost Your Compliance Success with Expert Guidance and Support</p>
+      <button>CONTACT US</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about">
+    <div class="about-text">
+      <h2 class="red-heading same-heading">The Compliance Assessment Expert</h2>
+      <p>
+        DigiDefense excels in compliance assessments, continuously evaluating your data, platforms, and procedures to
+        meet industry and regulatory standards. Our experts conduct pre-assessment planning, gap analysis, and provide
+        actionable recommendations to address risks, ensuring compliance with regulations like GDPR, HIPAA, and PCI DSS.
+        With a tailored project plan, DigiDefense supports you throughout the compliance process, keeping you aligned
+        with best practices.
+      </p>
+    </div>
+    <div class="about-img">
+            <img src="https://teaching.missouri.edu/sites/default/files/2023-07/AdobeStock_559363198.jpg" alt="compilance-assissments" />
+    </div>
+  </div>
+
+  <!-- Cards Section -->
+  <section class="campusguard-section">
+    <h2 class="section-title red-heading same-heading">Why Choose DigiDefense for Your Compliance Assessments?</h2>
+    <p class="section-subtext">
+      Compliance requirements can be complex and constantly evolving. DigiDefense simplifies the process with continuous
+      assessments of your data, platforms, and procedures, ensuring alignment with standards like PCI DSS and GDPR. We
+      assess your controls, identify gaps, and provide a clear path to compliance, helping you avoid penalties. With
+      tailored guidance and dedicated support, DigiDefense ensures your compliance journey is seamless and effective.
+    </p>
+
+    <div class="cards-container">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/documents.png" alt="icon" class="card-icon">
+        <h3 class="card-title">Stay Informed on Compliance Requirements</h3>
+        <p class="card-text">
+          We keep you updated on evolving industry standards and regulations, ensuring you’re always aware of compliance
+          requirements that impact your organization.
         </p>
       </div>
-      <div class="about-img">
-        <img
-          src="https://teaching.missouri.edu/sites/default/files/2023-07/AdobeStock_559363198.jpg"
-          alt="compliance-assessments"
-          class="about-img-img"
-        />
+
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="icon" class="card-icon">
+        <h3 class="card-title">Tailored Customer-Centric Support</h3>
+        <p class="card-text">
+          We prioritize your unique needs, delivering exceptional support to address your challenges and exceed your
+          compliance expectations.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/play-button-circled.png" alt="icon" class="card-icon">
+        <h3 class="card-title">Online Training for Compliance Awareness</h3>
+        <p class="card-text">
+          We provide online training with up-to-date content on compliance topics, featuring current lessons and data
+          breach statistics to educate your team.
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- Cards Section -->
-    <section class="DigiDefense-section">
-      <h2 class="section-title red-heading same-heading">
-        Why Choose DigiDefense for Your Compliance Assessments?
-      </h2>
-      <p class="section-subtext">
-        Compliance requirements can be complex and constantly evolving. DigiDefense simplifies the process with continuous
-        assessments of your data, platforms, and procedures, ensuring alignment with standards like PCI DSS and GDPR. We
-        assess your controls, identify gaps, and provide a clear path to compliance, helping you avoid penalties. With
-        tailored guidance and dedicated support, DigiDefense ensures your compliance journey is seamless and effective.
-      </p>
-      <div class="cards-container">
-        <div class="card">
-          <div class="card-icon-wrapper">
-            <img
-              src="https://img.icons8.com/ios-filled/50/000000/documents.png"
-              alt="icon"
-              class="card-icon"
-            />
-          </div>
-          <h3 class="card-title">Stay Informed on Compliance Requirements</h3>
-          <p class="card-text">
-            We keep you updated on evolving industry standards and regulations, ensuring you’re always aware of compliance
-            requirements that impact your organization.
-          </p>
+  <!-- Assessing Your Compliance Risks Section -->
+  <section class="assessing-section">
+    <div class="assessing-content-wrapper">
+      <div class="assessing-content">
+        <h2>Secure Your Future: Uncover Compliance Risks Now!</h2>
+        <p>
+          Don’t let compliance risks hold your organization back! Our expert assessments at DigiDefence identify
+          vulnerabilities, protect your reputation, and ensure you operate responsibly. Take the first step toward a
+          secure and compliant future with DigiDefence—start now and safeguard your success!
+        </p>
+      </div>
+      <button class="assessing-button">GET STARTED</button>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2 class="red-heading same-heading">Top Compliance Assessment FAQs</h2>
+    <div class="faq-container">
+      <div class="faq-card">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          What is a compliance assessment?
         </div>
-        <div class="card">
-          <div class="card-icon-wrapper">
-            <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="icon" class="card-icon" />
-          </div>
-          <h3 class="card-title">Tailored Customer-Centric Support</h3>
-          <p class="card-text">
-            We prioritize your unique needs, delivering exceptional support to address your challenges and exceed your
-            compliance expectations.
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-icon-wrapper">
-            <img
-              src="https://img.icons8.com/ios-filled/50/000000/play-button-circled.png"
-              alt="icon"
-              class="card-icon"
-            />
-          </div>
-          <h3 class="card-title">Online Training for Compliance Awareness</h3>
-          <p class="card-text">
-            We provide online training with up-to-date content on compliance topics, featuring current lessons and data
-            breach statistics to educate your team.
-          </p>
+        <div class="faq-answer">
+          A compliance assessment is a process of evaluating whether an organization adheres to legal, regulatory, and
+          industry standards. It helps identify gaps and ensures that the organization operates in accordance with
+          applicable laws and ethical practices.
         </div>
       </div>
-    </section>
 
-    <!-- Assessing Section -->
-    <section class="assessing-section">
-      <div class="assessing-content-wrapper">
-        <div class="assessing-content">
-          <h2 class="assessing-content-h2">Secure Your Future: Uncover Compliance Risks Now!</h2>
-          <p class="assessing-content-p">
-            Don’t let compliance risks hold your organization back! Our expert assessments at DigiDefence identify
-            vulnerabilities, protect your reputation, and ensure you operate responsibly. Take the first step toward a
-            secure and compliant future with DigiDefence—start now and safeguard your success!
-          </p>
+      <div class="faq-card">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          Why is a compliance assessment important?
         </div>
-        <button class="assessing-button">Get Started</button>
+        <div class="faq-answer">
+          Compliance assessments are crucial for reducing legal and reputational risks. They ensure that organizations
+          meet regulatory requirements, avoid penalties, and maintain trust with stakeholders by demonstrating a
+          commitment to ethical practices.
+        </div>
       </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <h2 class="red-heading same-heading faq-section-h2">
-        Top Compliance Assessment FAQs
-      </h2>
-      <div class="faq-container">
-        <div class="faq-card">
-          <input type="checkbox" id="faq1" class="faq-toggle" />
-          <label for="faq1" class="faq-question">What is a compliance assessment?</label>
-          <div class="faq-answer">
-            A compliance assessment is a process of evaluating whether an organization adheres to legal, regulatory, and
-            industry standards. It helps identify gaps and ensures that the organization operates in accordance with
-            applicable laws and ethical practices.
-          </div>
+      <div class="faq-card">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          What are the types of compliance assessments?
         </div>
-        <div class="faq-card">
-          <input type="checkbox" id="faq2" class="faq-toggle" />
-          <label for="faq2" class="faq-question">Why is a compliance assessment important?</label>
-          <div class="faq-answer">
-            Compliance assessments are crucial for reducing legal and reputational risks. They ensure that organizations
-            meet regulatory requirements, avoid penalties, and maintain trust with stakeholders by demonstrating a
-            commitment to ethical practices.
-          </div>
-        </div>
-        <div class="faq-card">
-          <input type="checkbox" id="faq3" class="faq-toggle" />
-          <label for="faq3" class="faq-question">What are the types of compliance assessments?</label>
-          <div class="faq-answer">
-            <div class="compliance-types">
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: PCI DSS')"
-              >
-                PCI DSS
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: GLBA')"
-              >
-                GLBA
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: CMMC')"
-              >
-                CMMC
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: GDPR')"
-              >
-                GDPR
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: HIPAA')"
-              >
-                HIPAA
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: ACH')"
-              >
-                ACH
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: FERPA')"
-              >
-                FERPA
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: FACTA Red Flags')"
-              >
-                FACTA Red Flags
-              </button>
-              <button
-                class="compliance-button"
-                onclick="alert('You selected: LADMF')"
-              >
-                LADMF
-              </button>
-            </div>
+        <div class="faq-answer">
+          <div class="compliance-types">
+            <button>PCI DSS</button>
+            <button>GLBA</button>
+            <button>CMMC</button>
+            <button>GDPR</button>
+            <button>HIPAA</button>
+            <button>ACH</button>
+            <button>FERPA</button>
+            <button>FACTA Red Flags</button>
+            <button>LADMF</button>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+
+  <script>
+    function toggleFAQ(element) {
+      const faqCard = element.parentElement;
+      faqCard.classList.toggle('active');
+    }
+  </script>
 </body>
+
 </html>
